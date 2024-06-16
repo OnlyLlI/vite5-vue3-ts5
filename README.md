@@ -1,9 +1,23 @@
-# Vue 3 + TypeScript + Vite
+# 项目文档
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### 
 
-## Recommended Setup
+### 项目简介
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+这是一个使用Vite(5.2.0)+Vue.js(3.4.21)+Typescript(5.2.2)搭建的项目
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+
+
+### 安装和运行
+
+确保你按照了Node.js(14.18+,  16+)，和Npm，改项目基于Node(20.14.0)、Npm(10.7.0)开发
+
+
+
+
+
+```bash
+npm install
+npm run dev 或者 vite dev
+```
+
