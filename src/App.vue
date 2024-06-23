@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -12,6 +13,8 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <el-button type="danger">Danger</el-button>
+  <el-button type="warning">Warning</el-button>
 </template>
 
 <style scoped lang="scss">
