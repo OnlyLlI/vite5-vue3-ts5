@@ -38,6 +38,7 @@ export default defineConfig(() => {
   })
   return {
     optimizeDeps: {
+      // 优化首次加载element-plus 可能卡顿
       include: optimizeDepsElementPlusIncludes,
     },
     resolve: {
@@ -61,6 +62,19 @@ export default defineConfig(() => {
         resolvers: [ElementPlusResolver()],
       }),
     ],
+    build: {
+      rollupOptions: {
+        output: {
+          // 分包
+          manualChunks(id: any) {
+            if (id.includes('node_modules')) {
+              if (id.includes('lodash-es')) return 'lodash';
+              if (id.includes('vue')) return 'vue';
+            }
+          }
+        }
+      }
+    },
     css: {
       preprocessorOptions: {
         scss: {
